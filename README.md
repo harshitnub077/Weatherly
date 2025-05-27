@@ -60,3 +60,8 @@ Weatherly is an atmospheric weather forecasting application with real-time AQI t
 - Live weather conditions via OpenWeather API
 - Real-time Air Quality Index (AQI) with pollutant breakdown
 - Luminous glassmorphism dark aesthetic
+
+### Technology Stack
+- Vite + React + TypeScript
+- Tailwind CSS
+- Lucide React Icons
