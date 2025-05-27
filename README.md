@@ -55,3 +55,8 @@ export default tseslint.config({
 
 ## About Weatherly
 Weatherly is an atmospheric weather forecasting application with real-time AQI tracking and celestial tracking.
+
+### Key Features
+- Live weather conditions via OpenWeather API
+- Real-time Air Quality Index (AQI) with pollutant breakdown
+- Luminous glassmorphism dark aesthetic
