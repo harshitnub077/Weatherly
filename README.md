@@ -65,3 +65,11 @@ Weatherly is an atmospheric weather forecasting application with real-time AQI t
 - Vite + React + TypeScript
 - Tailwind CSS
 - Lucide React Icons
+
+### Quick Start
+```bash
+git clone https://github.com/harshitnub077/Weatherly.git
+cd Weatherly
+npm install
+npm run dev
+```
