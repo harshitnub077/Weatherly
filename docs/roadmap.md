@@ -20,3 +20,4 @@ A chronological log of technical milestones, optimizations, and documentation up
 <!-- [2025-06-01T19:00:32+05:30] test: add unit tests for Celsius to Fahrenheit conversion -->
 <!-- [2025-06-01T19:33:49+05:30] style: standardize card border glow on focus -->
 <!-- [2025-06-01T20:06:06+05:30] refactor: streamline active city selection state -->
+<!-- [2025-06-01T20:39:23+05:30] fix: prevent horizontal overflow on compact viewports -->
