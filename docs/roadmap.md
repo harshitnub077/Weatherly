@@ -4,3 +4,4 @@ A chronological log of technical milestones, optimizations, and documentation up
 
 <!-- [2025-06-01T10:47:17+05:30] docs: document atmospheric condition mapping in API guide -->
 <!-- [2025-06-01T11:20:34+05:30] style: polish luminous glassmorphism card elevation -->
+<!-- [2025-06-01T11:53:51+05:30] refactor: extract temperature formatting utility -->
