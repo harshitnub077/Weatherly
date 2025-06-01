@@ -11,3 +11,4 @@ A chronological log of technical milestones, optimizations, and documentation up
 <!-- [2025-06-01T14:05:59+05:30] docs: add API rate limit guidelines to documentation -->
 <!-- [2025-06-01T14:37:16+05:30] style: refine cosmic gradient background transition -->
 <!-- [2025-06-01T15:10:33+05:30] feat: add air quality index (AQI) particulate breakdown -->
+<!-- [2025-06-01T15:43:50+05:30] refactor: clean up weather icon sprite mapping -->
