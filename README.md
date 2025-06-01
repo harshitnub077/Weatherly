@@ -73,3 +73,6 @@ cd Weatherly
 npm install
 npm run dev
 ```
+
+### Configuration
+Set `VITE_OPENWEATHER_API_KEY` in your `.env` file.
