@@ -15,3 +15,4 @@ A chronological log of technical milestones, optimizations, and documentation up
 <!-- [2025-06-01T16:16:07+05:30] perf: cache geocoding reverse lookup responses -->
 <!-- [2025-06-01T16:49:24+05:30] fix: handle edge case when location permission is denied -->
 <!-- [2025-06-01T17:22:41+05:30] docs: document 7-day trend calculation methodology -->
+<!-- [2025-06-01T17:55:58+05:30] style: tune pulse animation on current condition badge -->
