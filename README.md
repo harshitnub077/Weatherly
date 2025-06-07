@@ -78,3 +78,6 @@ npm run dev
 Set `VITE_OPENWEATHER_API_KEY` in your `.env` file.
 
 <!-- Documentation proofread for clarity -->
+
+## License
+Licensed under the MIT License.
