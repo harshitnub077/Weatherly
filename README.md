@@ -81,3 +81,8 @@ Set `VITE_OPENWEATHER_API_KEY` in your `.env` file.
 
 ## License
 Licensed under the MIT License.
+
+### Roadmap
+- [x] OpenWeather integration
+- [x] Luminous theme tokens
+- [ ] Push notifications for severe weather
