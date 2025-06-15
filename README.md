@@ -86,3 +86,5 @@ Licensed under the MIT License.
 - [x] OpenWeather integration
 - [x] Luminous theme tokens
 - [ ] Push notifications for severe weather
+
+<!-- Enhanced layout notes -->
