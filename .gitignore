@@ -33,3 +33,8 @@ dist-ssr
 # Caches
 .vite/
 *.tsbuildinfo
+
+# IDE configs
+.vscode/
+.idea/
+*.sublime-project
