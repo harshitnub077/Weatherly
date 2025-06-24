@@ -38,3 +38,7 @@ dist-ssr
 .vscode/
 .idea/
 *.sublime-project
+
+# OS
+.DS_Store
+Thumbs.db
