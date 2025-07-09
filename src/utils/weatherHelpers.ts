@@ -7,3 +7,14 @@ export function celsiusToFahrenheit(c: number): number {
 export function fahrenheitToCelsius(f: number): number {
   return Math.round(((f - 32) * 5) / 9);
 }
+
+export function getAqiDescription(aqi: number): { label: string; color: string } {
+  const map: Record<number, { label: string; color: string }> = {
+    1: { label: 'Good', color: '#22c55e' },
+    2: { label: 'Fair', color: '#eab308' },
+    3: { label: 'Moderate', color: '#f97316' },
+    4: { label: 'Poor', color: '#ef4444' },
+    5: { label: 'Very Poor', color: '#7f1d1d' },
+  };
+  return map[aqi] || { label: 'Unknown', color: '#94a3b8' };
+}
