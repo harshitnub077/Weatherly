@@ -31,3 +31,4 @@ A chronological log of technical milestones, optimizations, and documentation up
 <!-- [2025-07-14T14:03:09+05:30] style: polish ethereal celestial visual card backdrop -->
 <!-- [2025-07-14T15:17:32+05:30] refactor: extract lunar phase calculation helper -->
 <!-- [2025-07-14T16:32:55+05:30] perf: optimize celestial canvas particle rendering -->
+<!-- [2025-07-14T17:46:18+05:30] fix: correct hemisphere inversion for moon phase display -->
