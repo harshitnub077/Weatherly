@@ -39,3 +39,4 @@ A chronological log of technical milestones, optimizations, and documentation up
 <!-- [2025-07-15T13:41:09+05:30] style: polish alert banner pulsating warning border -->
 <!-- [2025-07-15T14:48:32+05:30] refactor: modularize severe alert parsing logic -->
 <!-- [2025-07-15T15:55:55+05:30] perf: memoize weather forecast hourly calculations -->
+<!-- [2025-07-15T17:02:18+05:30] fix: ensure proper dismissal state for expired alerts -->
