@@ -42,3 +42,4 @@ A chronological log of technical milestones, optimizations, and documentation up
 <!-- [2025-07-15T17:02:18+05:30] fix: ensure proper dismissal state for expired alerts -->
 <!-- [2025-07-15T18:09:41+05:30] feat: add weather radar tile layer toggle control -->
 <!-- [2025-07-15T19:16:04+05:30] style: refine map overlay controls contrast in dark mode -->
+<!-- [2025-07-15T20:23:27+05:30] test: verify weather alert parsing and priority sorting -->
