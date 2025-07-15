@@ -34,3 +34,4 @@ A chronological log of technical milestones, optimizations, and documentation up
 <!-- [2025-07-14T17:46:18+05:30] fix: correct hemisphere inversion for moon phase display -->
 <!-- [2025-07-14T19:01:41+05:30] style: tune ambient card glow opacity on hover -->
 <!-- [2025-07-14T20:15:04+05:30] test: add test assertions for moon illumination percentage -->
+<!-- [2025-07-15T11:27:23+05:30] docs: update weather alert banner specs in roadmap -->
