@@ -18,3 +18,8 @@ export function getAqiDescription(aqi: number): { label: string; color: string }
   };
   return map[aqi] || { label: 'Unknown', color: '#94a3b8' };
 }
+
+export function getWindDirection(degrees: number): string {
+  const directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+  return directions[Math.round(degrees / 45) % 8];
+}
