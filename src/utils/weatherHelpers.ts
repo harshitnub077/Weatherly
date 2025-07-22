@@ -23,3 +23,8 @@ export function getWindDirection(degrees: number): string {
   const directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
   return directions[Math.round(degrees / 45) % 8];
 }
+
+export function formatUnixTime(epoch: number, offsetSec: number = 0): string {
+  const date = new Date((epoch + offsetSec) * 1000);
+  return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+}
