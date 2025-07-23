@@ -28,3 +28,11 @@ export function formatUnixTime(epoch: number, offsetSec: number = 0): string {
   const date = new Date((epoch + offsetSec) * 1000);
   return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
+
+export function getUvRiskLevel(uv: number): string {
+  if (uv < 3) return 'Low';
+  if (uv < 6) return 'Moderate';
+  if (uv < 8) return 'High';
+  if (uv < 11) return 'Very High';
+  return 'Extreme';
+}
