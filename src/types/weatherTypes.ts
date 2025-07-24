@@ -17,3 +17,11 @@ export interface ForecastDay {
   condition: string;
   icon: string;
 }
+
+export interface AirQualityMetrics {
+  aqi: number;
+  pm2_5: number;
+  pm10: number;
+  o3: number;
+  no2: number;
+}
