@@ -36,3 +36,5 @@ export function getUvRiskLevel(uv: number): string {
   if (uv < 11) return 'Very High';
   return 'Extreme';
 }
+
+// Clean up helper exports and documentation comments
