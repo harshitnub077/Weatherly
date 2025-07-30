@@ -7,3 +7,5 @@
 ## [v1.1.0]
 - Added hourly temperature trend charts
 - Refined lunar phase visualization
+
+<!-- WIP: upcoming patch notes -->
