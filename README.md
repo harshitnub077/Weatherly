@@ -92,3 +92,5 @@ Licensed under the MIT License.
 <!-- Verified documentation structure -->
 
 <!-- Cleaned code snippet indentations -->
+
+<!-- Polished badge alignment -->
