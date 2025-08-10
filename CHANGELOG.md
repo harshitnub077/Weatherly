@@ -9,3 +9,5 @@
 - Refined lunar phase visualization
 
 <!-- WIP: upcoming patch notes -->
+
+<!-- Patched release tag documentation -->
