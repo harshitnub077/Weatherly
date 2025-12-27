@@ -5,13 +5,19 @@ import { Sun, Moon } from 'lucide-react'
 
 const header = () => {
     const { theme, setTheme } = useTheme();
-    const isDark = theme === "dark";
+
+    // Determine active theme (including system preference)
+    const isDark = theme === "dark" || (theme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
 
     return (
         <header className='sticky top-0 z-50 w-full border-b border-outline bg-surface/80 backdrop-blur-md py-3'>
             <div className='container mx-auto flex h-16 items-center justify-between px-6'>
                 <Link to={"/"} className="flex items-center gap-2">
-                    <img src="/logo-new.png" alt="Weatherly Logo" className="h-12 w-auto object-contain" />
+                    <img
+                        src={isDark ? "/logo-dark.png" : "/logo-light.png"}
+                        alt="Weatherly Logo"
+                        className="h-12 w-auto object-contain"
+                    />
                 </Link>
 
                 <div className="flex items-center gap-4">

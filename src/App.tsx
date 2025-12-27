@@ -3,10 +3,15 @@ import { CosmicBackground } from "./components/3d/CosmicBackground";
 import { WeatherDashboard } from "./components/weather/WeatherDashboard";
 import { CinematicSearch } from "./components/ui/CinematicSearch";
 import { useWeather } from "./hooks/useWeather";
+import { useTheme } from "./context/theme-provider";
 import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   const { data, loading, setLocation } = useWeather(35.6762, 139.6503); // Initial: Tokyo
+  const { theme } = useTheme();
+
+  // Determine active theme (including system preference)
+  const isDark = theme === "dark" || (theme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
 
   useEffect(() => {
     if ("geolocation" in navigator) {
@@ -53,7 +58,7 @@ function App() {
                 className="flex flex-col items-center gap-8"
               >
                 <motion.img
-                  src="/logo-new.png"
+                  src={isDark ? "/logo-dark.png" : "/logo-light.png"}
                   alt="Weatherly Logo"
                   className="h-24 w-auto object-contain mb-4"
                   animate={{
