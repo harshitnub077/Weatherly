@@ -1,36 +1,37 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { useTheme } from '../context/theme-provider'
 import { Sun, Moon } from 'lucide-react'
 
 
 const header = () => {
-    const { theme,setTheme } = useTheme();
+    const { theme, setTheme } = useTheme();
     const isDark = theme === "dark";
-  return (
-    <header className='sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur py-2 supports-[backdrop-filter]:bg-background/60'>
-        <div className='container mx-auto flex h-16 items-center justify-between px-4'>
-            <Link to={"/"}>
-                <img src={isDark ? "/logo.png" : "/logo2.png" } alt="Weatherly Logo" className="h-14" />
-            </Link>
 
-            <div>
-                {/* search */}
-                {/* {theme toggle} */}
-                <div onClick={()=>setTheme(isDark?"light":"dark") }
-                    className={`flex items-center curson-pointer transition-transform duration-500
-                        ${isDark ? "rotate-180" : "rotate-0"}
-                    `}>
-                    {isDark? (<Sun className='h-6 w-6 text-yellow-500 rotate-0 transition-all'/> 
-                    ): (
-                        <Moon className='h-6 w-6 text-blue-500 rotate-0 transition-all'/>
-                    )}
+    return (
+        <header className='sticky top-0 z-50 w-full border-b border-outline bg-surface/80 backdrop-blur-md py-3'>
+            <div className='container mx-auto flex h-16 items-center justify-between px-6'>
+                <Link to={"/"} className="flex items-center gap-2">
+                    <img src={isDark ? "/logo.png" : "/logo2.png"} alt="Weatherly Logo" className="h-10" />
+                    <span className="text-xl font-bold font-display tracking-tight text-on-surface">Weatherly</span>
+                </Link>
+
+                <div className="flex items-center gap-4">
+                    <button
+                        onClick={() => setTheme(isDark ? "light" : "dark")}
+                        className={`p-2 rounded-full hover:bg-surface-variant transition-all duration-300
+                            ${isDark ? "rotate-180" : "rotate-0"}
+                        `}
+                    >
+                        {isDark ? (
+                            <Sun className='h-5 w-5 text-google-yellow' />
+                        ) : (
+                            <Moon className='h-5 w-5 text-google-blue' />
+                        )}
+                    </button>
                 </div>
-            <div/>
-        </div>
-        </div>
-    </header>
-  )
+            </div>
+        </header>
+    )
 }
 
 export default header

@@ -1,16 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700;900&family=Syne:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-pearl-white: #f8fafc;
-  --color-ethereal-blue: #e0f2fe;
-  --color-soft-slate: #334155;
-  --color-amber-glow: #f59e0b;
-  --color-aurora-teal: #0d9488;
+  --color-google-blue: #1a73e8;
+  --color-google-red: #ea4335;
+  --color-google-yellow: #fbbc04;
+  --color-google-green: #34a853;
 
-  --font-cosmic: "Outfit", sans-serif;
-  --font-heading: "Syne", sans-serif;
+  --color-background: #f8f9fa;
+  --color-foreground: #202124;
 
+  --color-primary: #1a73e8;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #f1f3f4;
+  --color-secondary-foreground: #202124;
+
+  --color-muted: #f1f3f4;
+  --color-muted-foreground: #5f6368;
+
+  --color-accent: #f1f3f4;
+  --color-accent-foreground: #202124;
+
+  --color-surface: #ffffff;
+  --color-on-surface: #202124;
+  --color-on-surface-variant: #5f6368;
+  --color-outline: #dadce0;
+  --color-border: #dadce0;
+  --color-input: #dadce0;
+  --color-ring: #1a73e8;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+
+  --animate-in: in 0.5s ease-out;
+  --animate-out: out 0.5s ease-in;
   --animate-float: float 6s ease-in-out infinite;
 
   @keyframes float {
@@ -21,61 +45,119 @@
     }
 
     50% {
-      transform: translateY(-10px);
+      transform: translateY(-8px);
     }
   }
 }
 
 :root {
-  background-color: var(--color-pearl-white);
-  color: var(--color-soft-slate);
-  font-family: var(--font-cosmic);
-  overflow-x: hidden;
-  cursor: none;
+  --color-background: #f8f9fa;
+  --color-foreground: #202124;
+  --color-surface: #ffffff;
+  --color-on-surface: #202124;
+  --color-on-surface-variant: #5f6368;
+  --color-outline: #dadce0;
+  --color-surface-variant: #f1f3f4;
+
+  --color-primary: #1a73e8;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f1f3f4;
+  --color-secondary-foreground: #202124;
+  --color-muted: #f1f3f4;
+  --color-muted-foreground: #5f6368;
+  --color-accent: #f1f3f4;
+  --color-accent-foreground: #202124;
+  --color-border: #dadce0;
+  --color-input: #dadce0;
+  --color-ring: #1a73e8;
+
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --color-background: #0f172a;
+  --color-foreground: #f8fafc;
+  --color-surface: #1e293b;
+  --color-on-surface: #f8fafc;
+  --color-on-surface-variant: #94a3b8;
+  --color-outline: #334155;
+  --color-surface-variant: #1e293b;
+
+  --color-primary: #38bdf8;
+  --color-primary-foreground: #0f172a;
+  --color-secondary: #1e293b;
+  --color-secondary-foreground: #f8fafc;
+  --color-muted: #1e293b;
+  --color-muted-foreground: #94a3b8;
+  --color-accent: #1e293b;
+  --color-accent-foreground: #f8fafc;
+  --color-border: #334155;
+  --color-input: #334155;
+  --color-ring: #38bdf8;
 }
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Luminous Frosted Glass V4 */
-.glass-frosted {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(25px) saturate(150%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow:
-    0 10px 30px -10px rgba(0, 0, 0, 0.05),
-    inset 0 1px 1px rgba(255, 255, 255, 0.8);
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+/* Modern Google-style Card */
+.modern-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-outline);
+  border-radius: 24px;
+  padding: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
 }
 
-.glass-frosted:hover {
-  background: rgba(255, 255, 255, 0.6);
-  border-color: rgba(255, 255, 255, 0.8);
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+.modern-card:hover {
+  box-shadow: 0 4px 8px 3px rgba(60, 64, 67, 0.15), 0 1px 3px 0 rgba(60, 64, 67, 0.3);
+  transform: translateY(-2px);
 }
 
-/* Ethereal Background */
-.ethereal-bg {
-  background: radial-gradient(circle at top right, #e0f2fe 0%, #f8fafc 100%);
-  position: fixed;
-  inset: 0;
-  z-index: -1;
+/* Subtle Interactive Elements */
+.interactive-chip {
+  background: var(--color-surface);
+  border: 1px solid var(--color-outline);
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-on-surface-variant);
+  transition: background 0.2s;
 }
 
-.text-luminous {
-  background: linear-gradient(135deg, #334155 0%, #64748b 100%);
+.interactive-chip:hover {
+  background: var(--color-background);
+}
+
+/* Typography Scale */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-on-surface);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-google-blue), #1557b0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Custom Scrollbar Luminous */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -83,24 +165,14 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.05);
+  background: #dadce0;
   border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
 }
 
-h1,
-h2,
-h3 {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-.noise-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 999;
-  pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  opacity: 0.03;
-  mix-blend-mode: overlay;
+::-webkit-scrollbar-thumb:hover {
+  background: #bdc1c6;
+  border: 2px solid transparent;
+  background-clip: content-box;
 }

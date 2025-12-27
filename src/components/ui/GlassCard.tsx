@@ -16,7 +16,7 @@ export function GlassCard({ children, className = "", delay = 0 }: GlassCardProp
         delay,
         ease: [0.16, 1, 0.3, 1]
       }}
-      className={`glass-frosted rounded-[2.5rem] p-8 ${className}`}
+      className={`modern-card ${className}`}
     >
       {children}
     </motion.div>

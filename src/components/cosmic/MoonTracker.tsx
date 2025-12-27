@@ -11,17 +11,17 @@ export function MoonTracker() {
             <div className="flex flex-col h-full justify-between gap-8">
                 <div>
                     <div className="flex items-center justify-between mb-8">
-                        <span className="text-soft-slate/30 uppercase tracking-[0.4em] text-[10px] font-bold">Lunar Cycle</span>
-                        <div className="p-2 bg-soft-slate/5 rounded-xl border border-soft-slate/10">
-                            <Moon className="w-5 h-5 text-soft-slate/40" />
+                        <span className="text-on-surface-variant uppercase tracking-wider text-xs font-bold">Moon Phase</span>
+                        <div className="p-2 bg-google-blue/5 rounded-xl border border-google-blue/10">
+                            <Moon className="w-5 h-5 text-google-blue" />
                         </div>
                     </div>
 
                     <div className="flex items-baseline gap-6">
-                        <span className="text-[6.5rem] font-black leading-none tracking-tighter tabular-nums text-soft-slate">{illumination}%</span>
+                        <span className="text-8xl font-bold leading-none tracking-tight tabular-nums text-on-surface">{illumination}%</span>
                         <div className="flex flex-col">
-                            <span className="text-soft-slate/60 font-black tracking-[0.2em] uppercase text-[11px] mb-1">{phase}</span>
-                            <span className="text-soft-slate/30 text-[10px] font-bold tracking-widest">LUNAR ALIGNMENT</span>
+                            <span className="text-google-blue font-bold tracking-wide uppercase text-xs mb-1">{phase}</span>
+                            <span className="text-on-surface-variant text-[10px] font-bold tracking-widest uppercase">Lunar Visibility</span>
                         </div>
                     </div>
                 </div>
@@ -32,13 +32,13 @@ export function MoonTracker() {
                     <motion.div
                         animate={{
                             boxShadow: [
-                                "0 0 40px rgba(51, 65, 85, 0.03)",
-                                "0 0 80px rgba(51, 65, 85, 0.08)",
-                                "0 0 40px rgba(51, 65, 85, 0.03)"
+                                "0 0 40px rgba(66, 133, 244, 0.05)",
+                                "0 0 80px rgba(66, 133, 244, 0.12)",
+                                "0 0 40px rgba(66, 133, 244, 0.05)"
                             ]
                         }}
                         transition={{ duration: 8, repeat: Infinity }}
-                        className="w-28 h-28 rounded-full bg-gradient-to-br from-white via-slate-100 to-slate-200 relative overflow-hidden ring-1 ring-slate-100"
+                        className="w-28 h-28 rounded-full bg-gradient-to-br from-white via-slate-50 to-slate-100 relative overflow-hidden ring-1 ring-outline"
                     >
                         <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/moon.png')]" />
                         <motion.div
