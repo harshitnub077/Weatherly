@@ -11,8 +11,7 @@ const header = () => {
         <header className='sticky top-0 z-50 w-full border-b border-outline bg-surface/80 backdrop-blur-md py-3'>
             <div className='container mx-auto flex h-16 items-center justify-between px-6'>
                 <Link to={"/"} className="flex items-center gap-2">
-                    <img src={isDark ? "/logo.png" : "/logo2.png"} alt="Weatherly Logo" className="h-10" />
-                    <span className="text-xl font-bold font-display tracking-tight text-on-surface">Weatherly</span>
+                    <img src="/logo-new.png" alt="Weatherly Logo" className="h-12 w-auto object-contain" />
                 </Link>
 
                 <div className="flex items-center gap-4">

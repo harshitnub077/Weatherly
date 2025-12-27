@@ -46,15 +46,34 @@ function App() {
               <WeatherDashboard data={data} loading={loading} />
             </motion.div>
           ) : (
-            <div className="fixed inset-0 flex items-center justify-center z-50 pointer-events-none">
+            <div className="fixed inset-0 flex items-center justify-center z-50 pointer-events-none bg-background">
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0.4, 0.8, 0.4] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="text-sm font-medium tracking-widest text-on-surface-variant flex items-center gap-3"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="flex flex-col items-center gap-8"
               >
-                <div className="w-2 h-2 rounded-full bg-google-blue animate-ping" />
-                Loading weather data...
+                <motion.img
+                  src="/logo-new.png"
+                  alt="Weatherly Logo"
+                  className="h-24 w-auto object-contain mb-4"
+                  animate={{
+                    y: [0, -10, 0],
+                    opacity: [0.6, 1, 0.6]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                <motion.div
+                  animate={{ opacity: [0.4, 0.8, 0.4] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className="text-sm font-medium tracking-widest text-on-surface-variant flex items-center gap-3"
+                >
+                  <div className="w-2 h-2 rounded-full bg-google-blue animate-pulse" />
+                  Preparing Atmosphere...
+                </motion.div>
               </motion.div>
             </div>
           )}
