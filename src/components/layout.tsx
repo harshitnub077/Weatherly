@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from 'react'
-import Header from './TempHeader'
+import Header from './Header'
 
 const layout = ({ children }: PropsWithChildren) => {
     return (
