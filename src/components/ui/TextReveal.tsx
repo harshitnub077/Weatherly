@@ -26,7 +26,7 @@ export function TextReveal({ children, className, delay = 0 }: RevealProps) {
                 type: "spring",
                 damping: 12,
                 stiffness: 100,
-            },
+            } as const,
         },
         hidden: {
             opacity: 0,

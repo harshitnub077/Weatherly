@@ -3,7 +3,7 @@ import { useTheme } from '../context/theme-provider'
 import { Sun, Moon } from 'lucide-react'
 
 
-const header = () => {
+const Header = () => {
     const { theme, setTheme } = useTheme();
 
     // Determine active theme (including system preference)
@@ -39,4 +39,4 @@ const header = () => {
     )
 }
 
-export default header
+export default Header
