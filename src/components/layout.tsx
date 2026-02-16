@@ -1,10 +1,10 @@
 import type { PropsWithChildren } from 'react'
-import Header from './Header'
+import AppHeader from './AppHeader'
 
 const layout = ({ children }: PropsWithChildren) => {
     return (
         <div className="bg-background text-on-surface">
-            <Header />
+            <AppHeader />
             <main className="min-h-screen">
                 {children}
             </main>
